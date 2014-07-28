@@ -1,8 +1,30 @@
-Merge the training and the test sets to create one data set. Processing Steps : 1. Load xtest,test into two separate data frames. 2. combine them using Cbind. 3. Load strain,train into two separate data frames. 4. combine them using Cbind. Combining Test and Train Observations: 5. combine result from 2 and 4 using rbind.
+Merge the training and the test sets to create one data set. Processing Steps : 
 
-Naming columns: 1. Obtain column names from “features.txt”. 2. Assign column names to the result in step 5 from above. 3. Add two new Columns to the data set(activity, subject)
+1. Load xtest,test into two separate data frames. 
 
-Subsetting(Extracting only those measurements that has mean() and std(): 1. Extract desired columns by using Regex grep("mean()", features$V2) and grep("std()", features$V2). 2. Add descriptive names to activity column from activity_labels.txt.
+2. combine them using Cbind. 
+
+3. Load strain,train into two separate data frames.
+
+4. combine them using Cbind. Combining Test and Train Observations: 
+
+5. combine result from 2 and 4 using rbind.
+
+
+Naming columns: 
+
+1. Obtain column names from “features.txt”. 
+
+2. Assign column names to the result in step 5 from above. 
+
+3. Add two new Columns to the data set(activity, subject)
+
+
+Subsetting(Extracting only those measurements that has mean() and std(): 
+
+1. Extract desired columns by using Regex grep("mean()", features$V2) and grep("std()", features$V2). 
+
+2. Add descriptive names to activity column from activity_labels.txt.
 
 
 Changing variable names to something meaningful: new column names: 
